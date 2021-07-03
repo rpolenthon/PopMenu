@@ -9,7 +9,7 @@
 import UIKit
 
 /// Delegate for handling PopMenu selection.
-@objc public protocol PopMenuViewControllerDelegate: class {
+@objc public protocol PopMenuViewControllerDelegate: AnyObject {
     /// Called when an action is selected.
     @objc optional func popMenuDidSelectItem(_ popMenuViewController: PopMenuViewController, at index: Int)
 }
